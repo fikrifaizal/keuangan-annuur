@@ -1,0 +1,109 @@
+/* button color */
+.btn-primary {
+  background-color: #08538A !important;
+  border: var(--background-color) !important;
+  color: white !important;
+}
+.btn-success {
+  background-color: #088A44 !important;
+  border: var(--background-color) !important;
+  color: white !important;
+}
+.btn-danger {
+  background-color: #B90707 !important;
+  border: var(--background-color) !important;
+  color: white !important;
+}
+.btn-warning {
+  background-color: #DE9609 !important;
+  border: var(--background-color) !important;
+  color: white !important;
+}
+.btn-info {
+  background-color: #3C8DBC !important;
+  border: var(--background-color) !important;
+  color: white !important;
+}
+
+/* background color */
+.bg-primary {
+  background-color: #4E73DF !important;
+}
+.bg-success {
+  background-color: #1CC88A !important;
+}
+.bg-danger {
+  background-color: #C8831C !important;
+}
+.bg-warning {
+  background-color: #C5C81C !important;
+}
+.bg-info {
+  background-color: #1CA9C8 !important;
+}
+
+/* border-left color */
+.border-left-primary {
+  border-left: 0.25rem solid #4e73df !important;
+}
+.border-left-secondary {
+  border-left: 0.25rem solid #858796 !important;
+}
+.border-left-success {
+  border-left: 0.25rem solid #1cc88a !important;
+}
+.border-left-danger {
+  border-left: 0.25rem solid #e74a3b !important;
+}
+
+/* filter button */
+.btn-filter {
+  border: 0.5px solid #C8CED4 !important;
+  width: 28.5% !important;
+}
+
+.btn-filter:hover {  
+  border-color: #08538A !important;
+  color: #08538A !important;
+}
+
+/* tabs */
+.nav-link {
+  color: #088A44 !important;
+}
+
+.nav-link.active {
+  color: black !important;
+}
+
+/* datepicker button */
+.btn-input {
+  background-color: white !important;
+  border: 0.5px solid #C8CED4 !important;
+}
+
+/* pagination button */
+.page-item.active .page-link {
+  background-color: #08538A !important;
+  border: var(--background-color) !important;
+  color: white !important;
+}
+
+.page-item.disabled .page-link {
+  color: #6C757D !important;
+}
+
+.page-item .page-link {
+  color: #08538A !important;
+}
+
+/* custom modal positioning */
+.modal-open {
+  overflow: auto !important;
+  padding-right: 0px !important;
+}
+
+/* custom datepicker */
+.datepicker {
+  margin-top: 42px !important;
+}

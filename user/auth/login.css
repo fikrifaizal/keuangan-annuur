@@ -1,0 +1,89 @@
+html, body, main {
+  background-color: #F3F3F4;
+  scroll-behavior: smooth;
+}
+
+body,
+button {
+  font-family: "Poppins", sans-serif;
+}
+
+.transition {
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+/* main content */
+main {
+  padding: 125px 0 100px 0;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 475px;
+  margin: auto;
+}
+
+.form-signin .card {
+  border-radius: 24px;
+}
+
+.form-signin .form-control {
+  border-radius: 12px;
+}
+
+.form-signin .btn {
+  border-radius: 12px;
+}
+
+.form-signin .logo {
+  width: 150px;
+  height: 150px;
+}
+
+/* footer content */
+footer {
+  background-color: #088A44;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding-top: 38px;
+  display: block;
+}
+
+.footer .footer-divider {
+  background-color: #70BB93;
+  height: 1px;
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.footer .menu {
+  text-align: center;
+  margin: 0 300px 30px 300px;
+}
+
+.footer .menu .btn-success {
+  color: #F3F3F4 !important;
+}
+
+.footer .img-btn {
+  width: 100px;
+  height: 100px;
+}
+
+.footer .copyright {
+  padding: 10px 0 10px 0;
+  margin: 0;
+  color: #F3F3F4;
+}
+
+@media (min-width: 992px) {
+  body {
+    overflow: auto !important;
+  }
+}
