@@ -37,7 +37,7 @@ if(isset($_POST['login'])) {
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TPQ</title>
+    <title>Keuangan - Masjid Annuur</title>
     <!-- style css -->
     <link rel="stylesheet" href="/user/auth/login.css" />
     <link rel="stylesheet" href="/user/bendahara/layout/style.css" />

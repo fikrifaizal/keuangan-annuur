@@ -46,8 +46,13 @@ $result = mysqli_query($conn, $query);
             echo "<tr class='text-center align-middle'><td>".$count++."</td>";
             echo "<td>".customDateFormat($data['tanggal'])."</td>";
             echo "<td class='text-start'>".$data['keterangan']."</td>";
-            echo "<td>".setIDRFormat($data['masuk'])."</td>";
-            echo "<td>".setIDRFormat($data['keluar'])."</td>";?>
+            if($data['masuk'] != 0) {
+              echo "<td>".setIDRFormat($data['masuk'])."</td>";
+              echo "<td></td>";
+            } else {
+              echo "<td></td>";
+              echo "<td>".setIDRFormat($data['keluar'])."</td>";
+            } ?>
 
             <td>
               <!-- button edit -->

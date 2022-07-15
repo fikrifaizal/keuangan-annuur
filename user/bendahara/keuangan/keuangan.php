@@ -48,7 +48,7 @@ elseif((!empty($_GET['start']) && !empty($_GET['end'])) || !empty($_GET['kategor
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TPQ</title>
+    <title>Keuangan - Masjid Annuur</title>
     <!-- style css -->
     <link rel="stylesheet" href="/user/bendahara/layout/style.css" />
     <link rel="shortcut icon" href="/assets/image/logo-annur-bulat.png">
