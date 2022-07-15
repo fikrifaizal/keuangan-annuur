@@ -3,16 +3,16 @@ require_once('../config.php');
 require_once('../helper.php');
 include_once('akses.php');
 
-$setMonth = date("m");
-
 // saldo
 $querySaldo = "SELECT SUM(masuk) as kasmasuk,SUM(keluar) as kaskeluar,(SUM(masuk)-SUM(keluar)) as saldo FROM `keuangan_masjid`";
 $resultSaldo = mysqli_query($conn, $querySaldo);
 $dataSaldo = mysqli_fetch_array($resultSaldo, MYSQLI_ASSOC);
 
-// set year
+// set date
 $setYear = date("Y");
+$setMonth = date("m");
 ?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -52,11 +52,11 @@ $setYear = date("Y");
           </div>
 
           <div class="col-md-4 mb-3">
-            <div class="card border-left-primary shadow h-100 py-2">
+            <div class="card border-left-danger shadow h-100 py-2">
               <div class="card-body">
                 <div class="row align-items-center">
                   <div class="col mr-2">
-                    <div class="font-weight-bold text-primary text-uppercase mb-1">Kas Keluar Hari Ini</div>
+                    <div class="font-weight-bold text-danger text-uppercase mb-1">Kas Keluar Hari Ini</div>
                     <div class="h5 font-weight-bold"><?= setIDRFormat($dataSaldo['kaskeluar'])?></div>
                   </div>
                   <div class="col-auto">
@@ -86,7 +86,7 @@ $setYear = date("Y");
         
         <div class="row">
           <div class="col-md-12 mb-3">
-            <div class="card border-left-success shadow h-100">
+            <div class="card border-left-primary shadow h-100">
               <div class="card-header">
                 <span class="me-1"><i class="bi bi-bar-chart-fill"></i></span>
                 <span>Keuangan Tahun <?=$setYear?></span>
