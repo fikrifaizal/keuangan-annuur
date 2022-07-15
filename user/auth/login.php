@@ -57,7 +57,7 @@ if(isset($_POST['login'])) {
         <div class="card border shadow">
           <div class="card-body mx-4 my-3">
             <img class="logo mb-1" src="\assets\image\logo-annur-bulat.png" />
-            <h4 class="mb-3">Sistem Informasi TPQ Annuur</h4>
+            <h4 class="mb-3">Sistem Informasi Manajemen Keuangan Masjid Annuur</h4>
 
             <form class="text-center" method="post">
               <div class="mb-3">
@@ -85,7 +85,7 @@ if(isset($_POST['login'])) {
             </a>
           </div>
           <div class="col-sm-4">
-            <a href="rekap-spp.php" class="btn btn-success p-3">
+            <a href="https://tpq-annuurr.herokuapp.com/" class="btn btn-success p-3">
               <div class="text-center">
                 <img class="img-btn mb-3" src="\assets\image\logo-annur-bulat.png" />
                 <h6>TPQ Annuur</h6>
@@ -93,7 +93,7 @@ if(isset($_POST['login'])) {
             </a>
           </div>
           <div class="col-sm-4">
-            <a href="rekap-spp.php" class="btn btn-success p-3">
+            <a href="https://keuangan-annuur.herokuapp.com/" class="btn btn-success p-3">
               <div class="text-center">
                 <img class="img-btn mb-3" src="\assets\image\logo-annur-bulat.png" />
                 <h6>Keuangan Masjid</h6>
