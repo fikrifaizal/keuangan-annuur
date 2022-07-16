@@ -13,10 +13,10 @@ if(isset($_GET['kid'])) {
   $tanggal = $data['tanggal'];
 
   if(intval($data['masuk']) != 0) {
-    $kategori = "masuk";
+    $kategori = "Kas Masuk";
     $jumlah = $data['masuk'];
   } else {
-    $kategori = "keluar";
+    $kategori = "Kas Keluar";
     $jumlah = $data['keluar'];
   }
 
@@ -24,15 +24,15 @@ if(isset($_GET['kid'])) {
     session_start();
     $id = $_SESSION["id"];
     $keterangan = $_POST['keterangan'];
-    $kategori = $_POST['newkategori'];
+    $kategori = $_POST['kategori'];
     $jumlah = $_POST['jumlah'];
     $tanggal = $_POST['tanggal'];
 
-    if($kategori == "masuk") {
+    if($kategori == "Kas Masuk") {
       $query = "UPDATE `keuangan_masjid` SET `keterangan`='$keterangan',`keluar`='0',`masuk`='$jumlah',`tanggal`='$tanggal',`user_id`='$id' WHERE `id` LIKE '$kid'";
     }
-    elseif($kategori == "keluar") {
-      $query = "UPDATE `keuangan_masjid` SET `keterangan`='$keterangan',`keluar`='0',`masuk`='$jumlah',`tanggal`='$tanggal',`user_id`='$id' WHERE `id` LIKE '$kid'";
+    elseif($kategori == "Kas Keluar") {
+      $query = "UPDATE `keuangan_masjid` SET `keterangan`='$keterangan',`masuk`='0',`keluar`='$jumlah',`tanggal`='$tanggal',`user_id`='$id' WHERE `id` LIKE '$kid'";
     }
     $result = mysqli_query($conn, $query);
 

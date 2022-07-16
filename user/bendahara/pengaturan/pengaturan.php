@@ -113,7 +113,6 @@ if(isset($_POST['ubah'])) {
                     </div>
                     <div class="col col-md-6 d-grid gap-2">
                       <button type="submit" name="ubah" class="btn btn-success btn-block">
-                        <span><i class="bi bi-pencil"></i></span>
                         <span>Update</span>
                       </button>
                     </div>
