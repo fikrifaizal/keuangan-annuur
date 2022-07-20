@@ -2,7 +2,7 @@
 require_once '../config.php';
 
 if(isset($_POST['login'])) {
-  $username = $_POST['username'];
+  $username = addslashes($_POST['username']);
   $password = $_POST['passwd'];
 
   $query = "SELECT `id`,`nama`,`roles`,`password` FROM user
