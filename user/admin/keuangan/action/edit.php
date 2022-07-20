@@ -13,10 +13,10 @@ if(isset($_GET['kid'])) {
   $tanggal = $data['tanggal'];
 
   if(intval($data['masuk']) != 0) {
-    $kategori = "Kas Masuk";
+    $kategori = "masuk";
     $jumlah = $data['masuk'];
   } else {
-    $kategori = "Kas Keluar";
+    $kategori = "keluar";
     $jumlah = $data['keluar'];
   }
 
