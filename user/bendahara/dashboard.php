@@ -120,7 +120,7 @@ $setMonth = date("m");
                     $setMonth = $setYear."-$i";
                   }
 
-                  $count_chart = "SELECT SUM(masuk) as totalmasuk FROM `keuangan_masjid` WHERE `tanggal` LIKE '%$setMonth%' AND `keluar` LIKE '0'";
+                  $count_chart = "SELECT SUM(masuk) as totalmasuk FROM `keuangan_masjid` WHERE `tanggal` LIKE '%$setMonth%'";
                   $query_chart = mysqli_query($conn, $count_chart);
                   $data_chart = mysqli_fetch_array($query_chart, MYSQLI_ASSOC);
                   if(!empty($data_chart['totalmasuk'])) {
@@ -150,7 +150,7 @@ $setMonth = date("m");
                     $setMonth = $setYear."-$i";
                   }
 
-                  $count_chart = "SELECT SUM(keluar) as totalkeluar FROM `keuangan_masjid` WHERE `tanggal` LIKE '%$setMonth%' AND `masuk` LIKE '0'";
+                  $count_chart = "SELECT SUM(keluar) as totalkeluar FROM `keuangan_masjid` WHERE `tanggal` LIKE '%$setMonth%'";
                   $query_chart = mysqli_query($conn, $count_chart);
                   $data_chart = mysqli_fetch_array($query_chart, MYSQLI_ASSOC);
                   if(!empty($data_chart['totalkeluar'])) {

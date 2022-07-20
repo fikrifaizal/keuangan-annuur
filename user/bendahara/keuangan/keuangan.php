@@ -130,7 +130,7 @@ elseif((!empty($_GET['start']) && !empty($_GET['end'])) || !empty($_GET['kategor
                 </a>
                 <!-- button trigger modal -->
                 <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#tambahKeuangan" style="float: right;">
-                  <span>Tambah Kas Keluar</span>
+                  <span>Tambah Kas</span>
                 </button>
 
                 <!-- Modal -->
@@ -139,7 +139,7 @@ elseif((!empty($_GET['start']) && !empty($_GET['end'])) || !empty($_GET['kategor
                     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                       <div class="modal-content">
                         <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">Tambah Transaksi Keluar</h5>
+                          <h5 class="modal-title" id="exampleModalLabel">Tambah Transaksi</h5>
                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
@@ -155,7 +155,11 @@ elseif((!empty($_GET['start']) && !empty($_GET['end'])) || !empty($_GET['kategor
                           <div class="form-group row">
                             <label for="newkategori" class="col-sm-3 col-form-label">Kategori</label>
                             <div class="col-sm-9">
-                              <input type="text" name="newkategori" class="form-control" id="newkategori" value="Kas Keluar" required readonly>
+                              <select class="form-select" name="newkategori" id="newkategori">
+                                <option selected disabled></option>
+                                <option value="masuk">Kas Masuk</option>
+                                <option value="keluar">Kas Keluar</option>
+                              </select>
                             </div>
                           </div><br>
 

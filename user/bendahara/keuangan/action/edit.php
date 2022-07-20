@@ -23,7 +23,7 @@ if(isset($_GET['kid'])) {
   if(isset($_POST['ubah'])) {
     session_start();
     $id = $_SESSION["id"];
-    $keterangan = $_POST['keterangan'];
+    $keterangan = addslashes($_POST['keterangan']);
     $kategori = $_POST['newkategori'];
     $jumlah = $_POST['jumlah'];
     $tanggal = $_POST['tanggal'];
@@ -32,7 +32,7 @@ if(isset($_GET['kid'])) {
       $query = "UPDATE `keuangan_masjid` SET `keterangan`='$keterangan',`keluar`='0',`masuk`='$jumlah',`tanggal`='$tanggal',`user_id`='$id' WHERE `id` LIKE '$kid'";
     }
     elseif($kategori == "keluar") {
-      $query = "UPDATE `keuangan_masjid` SET `keterangan`='$keterangan',`keluar`='0',`masuk`='$jumlah',`tanggal`='$tanggal',`user_id`='$id' WHERE `id` LIKE '$kid'";
+      $query = "UPDATE `keuangan_masjid` SET `keterangan`='$keterangan',`masuk`='0',`keluar`='$jumlah',`tanggal`='$tanggal',`user_id`='$id' WHERE `id` LIKE '$kid'";
     }
     $result = mysqli_query($conn, $query);
 

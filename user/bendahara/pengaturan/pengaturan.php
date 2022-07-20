@@ -16,8 +16,8 @@ $nama = $data['nama'];
 $username = $data['username'];
 
 if(isset($_POST['ubah'])) {
-  $nama = $_POST['nama'];
-  $username = $_POST['username'];
+  $nama = addslashes($_POST['nama']);
+  $username = addslashes($_POST['username']);
 
   if(isset($_POST['passwd'])) {
     if($_POST['passwd'] == $_POST['passwdulang']) {
