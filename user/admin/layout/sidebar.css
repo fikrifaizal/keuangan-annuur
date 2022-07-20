@@ -31,6 +31,12 @@ main {
   border: none !important;
 }
 
+.sidebar-nav .side-divider {
+  height: 1px;
+  background-color: #70BB93;
+  margin: 0 0 1.25rem 0;
+}
+
 .sidebar-link {
   display: flex;
   align-items: center;
@@ -66,7 +72,7 @@ main {
 }
 
 .navbar .navbar-margin {
-  margin: 0 20px 0 20px;
+  margin: 0;
 }
 
 .navbar .logo {
@@ -90,17 +96,20 @@ main {
   margin: 0.5rem 0 0.5rem 0;
 }
 
-.topbar-text {
+.dropdown-user {
   color: #898989 !important;
   font-weight: 500;
   font-size: 15px;
 }
 
+.topbar-text {
+  display: none;
+  visibility: hidden;
+}
+
 .topbar-divider {
-  width: 1px;
-  background-color: #CDCDCF;
-  height: calc(var(--topNavbarHeight) / 2);
-  margin: auto 1rem;
+  display: none;
+  visibility: hidden;
 }
 
 .shadow {
@@ -151,6 +160,10 @@ main {
     transition: all .3s;
   }
 
+  .navbar .navbar-margin {
+    margin: 0 20px 0 20px;
+  }
+
   .navbar .dropdown-menu-end{
     right: 0;
     left: auto;
@@ -189,6 +202,23 @@ main {
     display: none !important;
   }
 
+  .topbar-text {
+    display: inline;
+    visibility: visible;
+    color: #898989 !important;
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+  .topbar-divider {
+    display: inline;
+    visibility: visible;
+    width: 1px;
+    background-color: #CDCDCF;
+    height: calc(var(--topNavbarHeight) / 2);
+    margin: auto 1rem;
+  }
+
   /* this is to remove the backdrop */
   .offcanvas-backdrop::before {
     display: none;
@@ -209,11 +239,5 @@ main {
   .sidebar-nav .side-property .item-property {
     font-weight: 500;
     font-size: 16px;
-  }
-
-  .sidebar-nav .side-divider {
-    height: 1px;
-    background-color: #70BB93;
-    margin: 0 0 1.25rem 0;
   }
 }
